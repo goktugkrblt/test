@@ -77,7 +77,6 @@ position: relative;
 }
 
 .footer{
-    margin-top: 10%;
     margin-bottom: 35px;
 }
 
@@ -229,3 +228,17 @@ position: relative;
             right: -30%;
     }
 } 
+
+
+@media only screen and (min-height: 800px) and (max-height: 900px) {
+    .img-main{
+        width: 280px;
+    }
+}
+
+
+@media only screen and (min-height: 901px) and (max-height: 1000px) {
+    .img-main{
+        width: 300px;
+    }
+}
