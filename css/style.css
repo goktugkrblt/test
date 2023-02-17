@@ -29,7 +29,7 @@
 }
 
 .behance{
-    margin-right: 43px;
+    margin-right: 57px;
 }
 
 .instagram{
@@ -104,7 +104,57 @@ position: relative;
     margin-bottom: 2px;
 }
 
-@media only screen and (max-width: 734px) { 
+
+.behance:hover .behance-path{
+    fill: #1E1E1E;
+}
+
+.instagram:hover .ins-path{
+    fill: #1E1E1E;
+}
+.behance{
+    cursor: pointer;
+}
+
+.instagram{
+    cursor: pointer;
+}
+
+.mail{
+    cursor: pointer;
+    
+}
+
+.right{
+    position: relative;
+}
+
+
+.contact-box{
+    background-color: #E1E1E5;
+    padding: 9px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 99999999;
+}
+
+.bottom-contanct{
+    margin-top: 50px;
+    display: flex;
+}
+
+.bottom-contanct svg{
+    margin: 4px;
+}
+
+
+.off {
+    display: none;
+  }
+
+
+@media only screen and (max-width: 600px) { 
     .nav-row{
         flex-direction: column;
       
@@ -150,8 +200,8 @@ position: relative;
     }
 
     .p-abs{
-        top: 55%;
-        left: 40%;
+       position: static;
+       transform: none;
     }
     .overflow-main{
         justify-content: flex-start;
@@ -167,15 +217,56 @@ position: relative;
     .img-main{
         width: 250px;
     }
+
+    .relative-body{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .p-abs-foot{
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .right .behance{
+        order: 3;
+        margin: 0;
+    }
+    .right .instagram{
+        order: 1;
+        margin: 0;
+    }
+        
+    
+    .right .mail{
+        order: 2;
+    }
+
+    .desktop-svg{
+        display: none;
+     }
+     .medium-svg{
+        display: none;
+     }
+
+     .contact-box{
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 9999;
+     }
+    
 } 
 
 
 
-@media only screen and (min-width: 735px) and (max-width: 1068px) { 
+@media only screen and (min-width: 601px) and (max-width: 1068px) { 
 
     .nav-menu{
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 60px;
     }
     .logo{
         display: flex;
@@ -211,11 +302,6 @@ position: relative;
         padding: 0;
     }
 
-    .p-abs{
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-    }
     .overflow-main{
         justify-content: flex-start;
     }
@@ -225,20 +311,52 @@ position: relative;
     }
     .head-text{
             top: 40%;
-            right: -30%;
+            right: -53%;
     }
+    .relative-body{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .p-abs-foot{
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }   
+    .p-abs{
+        position: static;
+        transform: none;
+        margin: 0;
+        padding: 0;
+     } 
+
+     .desktop-svg{
+        display: none;
+     }
+
+     .mobile-svg{
+        display: none;
+     }
+
+     .footer{
+        margin-top: 75px;
+     }
+
+    
 } 
 
 
-@media only screen and (min-height: 800px) and (max-height: 900px) {
-    .img-main{
-        width: 280px;
-    }
+
+
+@media only screen and (min-width: 1069px){
+    .mobile-svg{
+        display: none;
+     }
+     .medium-svg{
+        display: none;
+     }
 }
 
 
-@media only screen and (min-height: 901px) and (max-height: 1000px) {
-    .img-main{
-        width: 300px;
-    }
-}
