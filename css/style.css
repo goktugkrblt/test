@@ -143,7 +143,7 @@ position: relative;
 }
 
 .bottom-contanct{
-    margin-top: 63px;
+    margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -246,7 +246,7 @@ fill: #050505;
         transform: none;
         display: flex;
         justify-content: center;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
     .right .behance{
         order: 1;
@@ -271,8 +271,10 @@ fill: #050505;
 
      .contact-box{
         z-index: 9999;
-        left: 0;
-        right: 0;
+        width: 300px;
+        left: 50%;
+        transform: translate(-50%);
+
      }
 
      .m-oguz{
@@ -355,7 +357,7 @@ fill: #050505;
         transform: none;
         display: flex;
         justify-content: center;
-        padding-bottom: 40px;
+        padding-bottom: 70px;
     }   
     .p-abs{
         position: static;
@@ -408,7 +410,7 @@ fill: #050505;
 
 @media only screen and (max-width: 376px){
     .p-abs-foot{
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .head-text{
